@@ -14,7 +14,7 @@ Bu hatayı çözebilmek için komutları yönetici olarak çalıştırmanız ger
 4. Ardından, PostgreSQL'in yüklü olduğu dizine gitmek için aşağıdaki komutu kullanın:
 
 ```bash
-    cd "C:\Program Files\PostgreSQL\17\bin"
+cd "C:\Program Files\PostgreSQL\17\bin"
 ```
 
 ## Adım 2: Veri Kümesini Yeniden Başlatmayı Deneyin
@@ -22,7 +22,7 @@ Bu hatayı çözebilmek için komutları yönetici olarak çalıştırmanız ger
 PostgreSQL'in veri kümesini yeniden başlatmayı deneyin. Bunun için aşağıdaki komutu kullanabilirsiniz:
 
 ```bash
-    initdb -D "C:\Program Files\PostgreSQL\17\data" -U postgres --locale="tr_TR.utf8"
+initdb -D "C:\Program Files\PostgreSQL\17\data" -U postgres --locale="tr_TR.utf8"
 ```
 
 Bu komut, PostgreSQL veritabanı kümesini belirtilen dizine oluşturur. Eğer bu komut başarısız olursa, hata mesajını dikkatlice inceleyin. Genellikle eksik izinler veya dosya yolu hataları nedeniyle işlem başarısız olabilir.
@@ -34,13 +34,13 @@ Eğer yukarıdaki adımlar sorununuzu çözmediyse, PostgreSQL hizmetini manuel 
 ### Hizmeti Kaydetme
 
 ```bash
-    pg_ctl.exe register -N "PostgreSQL" -U "NT AUTHORITY\NetworkService" -D "C:\Program Files\PostgreSQL\17\data" -w
+pg_ctl.exe register -N "PostgreSQL" -U "NT AUTHORITY\NetworkService" -D "C:\Program Files\PostgreSQL\17\data" -w
 ```
 
 ### Hizmeti Başlatma
 
 ```bash
-    pg_ctl start -D "C:\Program Files\PostgreSQL\17\data"
+pg_ctl start -D "C:\Program Files\PostgreSQL\17\data"
 ```
 
 Bu komutlar, PostgreSQL hizmetini Windows hizmeti olarak kaydeder ve başlatır.
