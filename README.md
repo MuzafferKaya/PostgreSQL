@@ -44,3 +44,7 @@ pg_ctl start -D "C:\Program Files\PostgreSQL\17\data"
 ```
 
 Bu komutlar, PostgreSQL hizmetini Windows hizmeti olarak kaydeder ve başlatır.
+
+## Adım 3: PostgreSQL'i Yeniden Kurun
+
+Eğer yukarıdaki adımların hiçbiri sorunu çözmediyse, kesin çözüm olarak PostgreSQL'i kaldırıp yeniden kuruyoruz. Dikkat etmemiz gereken tek şey, kurulum sırasında Locale seçimini doğru yapmaktır. Eğer bilgisayarınızın bölgesi Türkiye ise, kurulum sırasında Default Locale olarak English (United States) seçip kurulumu tamamlayın.
