@@ -2,7 +2,7 @@
 
 # Windows 11 PostgreSQL 17: "The Database Cluster Initialization Failed" Hatası Çözümü
 
-Bu rehber, PostgreSQL 17'yi kurarken karşılaşılan "The database cluster initialization failed" hatasını çözmenize yardımcı olacaktır. Bu hata, PostgreSQL veritabanı kümesinin başlatılmaya çalışıldığı ancak başarısız olduğu durumlarda görülür. Aşağıdaki adımları takip ederek bu hatayı çözebilirsiniz.
+Bu rehber, PostgreSQL 17'yi kurarken karşılaşılan "The database cluster initialization failed" hatasını çözmenize yardımcı olacaktır. Bu hata, PostgreSQL veritabanı kümesinin başlatılmaya çalışıldığı ancak başarısız olduğu durumlarda görülür. Aşağıdaki adımları takip ederek bu hatayı çözebilirsiniz. Adım 4 en kesin çözümdür.
 
 ## Adım 1: Yönetici Olarak Komut İstemcisini (CMD) Açın
 
@@ -45,6 +45,6 @@ pg_ctl start -D "C:\Program Files\PostgreSQL\17\data"
 
 Bu komutlar, PostgreSQL hizmetini Windows hizmeti olarak kaydeder ve başlatır.
 
-## Adım 3: PostgreSQL'i Yeniden Kurun
+## Adım 4: PostgreSQL'i Yeniden Kurun
 
 Eğer yukarıdaki adımların hiçbiri sorunu çözmediyse, kesin çözüm olarak PostgreSQL'i kaldırıp yeniden kuruyoruz. Dikkat etmemiz gereken tek şey, kurulum sırasında Locale seçimini doğru yapmaktır. Eğer bilgisayarınızın bölgesi Türkiye ise, kurulum sırasında Default Locale olarak English (United States) seçip kurulumu tamamlayın.
